@@ -41,12 +41,12 @@ body {
   font-variant-ligatures: no-common-ligatures;
   font-feature-settings: "kern", "liga" 0, "clig" 0;
   /* grid */
-  //display: grid;
-  //align-content: stretch;
-  //align-items: stretch;
-  //justify-content: stretch;
-  //justify-items: stretch;
-  //grid-gap: 1rem;
+  display: grid;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: stretch;
+  justify-items: stretch;
+  grid-gap: 1rem;
 }
 
 a, a:visited {
@@ -72,9 +72,6 @@ a > img {
 }
 
 p, li {
-  /*text-align: justify;*/
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto;
 }
 

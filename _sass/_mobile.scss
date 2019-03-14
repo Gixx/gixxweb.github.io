@@ -1,0 +1,12 @@
+/*
+ * Mobile
+ */
+@media (max-width: 767px) {
+  body {
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: var(--header-height) auto max-content;
+    grid-template-areas: "." "main" "footer";
+  }
+}
