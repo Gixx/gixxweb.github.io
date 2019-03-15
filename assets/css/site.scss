@@ -5,47 +5,7 @@
 @import "common";
 @import "desktop";
 @import "mobile";
-
-
-html {
-  background-image: url("../img/pattern.jpg");
-  background-attachment: fixed;
-}
-
-body {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 30%);
-  display: grid;
-}
-
-body > header {
-  grid-area: header;
-}
-
-body > header > h1 {
-  position: sticky;
-  top: 1rem;
-  display: block;
-  width: 100%;
-  height: 0;
-  padding-top: calc(69 / 26 * 100%);
-  margin: 0;
-  text-indent: -100rem;
-  overflow: hidden;
-  background-image: url("/assets/img/Gixx.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-body > nav {
-  grid-area: nav;
-  background: #ff4444;
-}
-
-body > main {
-  grid-area: main;
-  background: #7f7fff;
-}
-
-body > footer {
-  grid-area: footer;
-}
+@import "header";
+@import "navigation";
+@import "main";
+@import "footer";

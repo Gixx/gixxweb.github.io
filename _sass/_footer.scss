@@ -1,0 +1,11 @@
+
+body > footer {
+  grid-area: footer;
+}
+
+body > footer > p {
+  margin: 0;
+  padding: 0.5rem 2rem;
+  line-height: 2rem;
+  color: var(--secondary);
+}

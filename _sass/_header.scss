@@ -1,0 +1,20 @@
+body > header {
+  grid-area: header;
+}
+
+body > header > h1 {
+  position: sticky;
+  justify-self: end;
+  max-width: 26rem;
+  max-height: 69rem;
+  top: 5rem;
+  display: block;
+  width: 100%;
+  height: calc(69 / 26 * 100%);
+  margin: 0;
+  text-indent: -100rem;
+  overflow: hidden;
+  background-image: url("/assets/img/Gixx.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

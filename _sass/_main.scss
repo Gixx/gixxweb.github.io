@@ -1,0 +1,11 @@
+body > main {
+  grid-area: main;
+}
+
+body > main > section {
+  border-radius: 0.5rem;
+  background: #7f7fff;
+  height: 100%;
+  width: 100%;
+  max-width: 90rem;
+}

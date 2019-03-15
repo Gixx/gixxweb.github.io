@@ -1,8 +1,8 @@
 @media (min-width: 768px)
 {
   body {
-    grid-template-columns: auto 20% 5rem 50% auto;
-    grid-template-rows: 0 auto 0 3rem;
+    grid-template-columns: minmax(50px, auto) minmax(100px, 260px) 50px minmax(380px, 900px) minmax(50px, auto);
+    grid-template-rows: 0 auto 0 30px;
     grid-template-areas:
     ". . . . ."
     ". header nav main ."
