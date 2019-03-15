@@ -5,12 +5,10 @@ body > header {
 body > header > h1 {
   position: sticky;
   justify-self: end;
-  max-width: 26rem;
-  max-height: 69rem;
   top: 5rem;
   display: block;
   width: 100%;
-  height: calc(69 / 26 * 100%);
+  height: 690px;
   margin: 0;
   text-indent: -100rem;
   overflow: hidden;

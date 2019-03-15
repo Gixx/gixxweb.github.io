@@ -1,0 +1,15 @@
+@media (max-width: 480px) {
+  body {
+    grid-template-columns: 0 auto 0;
+    grid-template-rows:  0 auto 30px;
+    grid-template-areas:
+            ". . ."
+            ". main ."
+            ". footer .";
+  }
+
+  body > header,
+  body > nav {
+    display: none;
+  }
+}

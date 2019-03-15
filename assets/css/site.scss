@@ -3,8 +3,9 @@
 
 @import "variables";
 @import "common";
-@import "desktop";
-@import "mobile";
+@import "device-desktop";
+@import "device-tablet";
+@import "device-mobile";
 @import "header";
 @import "navigation";
 @import "main";
