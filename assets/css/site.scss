@@ -3,10 +3,28 @@
 
 @import "variables";
 @import "common";
-@import "device-desktop";
-@import "device-tablet";
-@import "device-mobile";
-@import "header";
-@import "navigation";
-@import "main";
-@import "footer";
+
+/* desktop */
+@media (min-width: 1025px) {
+  @import "desktop/_layout.scss";
+  @import "desktop/_header.scss";
+  @import "desktop/_navigation.scss";
+  @import "desktop/_main.scss";
+  @import "desktop/_footer.scss";
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  @import "tablet/_layout.scss";
+  @import "tablet/_header.scss";
+  @import "tablet/_navigation.scss";
+  @import "tablet/_main.scss";
+  @import "tablet/_footer.scss";
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  @import "mobile/_layout.scss";
+  @import "mobile/_main.scss";
+  @import "mobile/_footer.scss";
+}

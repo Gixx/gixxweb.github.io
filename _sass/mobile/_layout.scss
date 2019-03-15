@@ -1,0 +1,13 @@
+body {
+  grid-template-columns: 0 auto 0;
+  grid-template-rows:  0  minmax(min-content, calc(100vh - 50px)) 30px;
+  grid-template-areas:
+          ". . ."
+          ". main ."
+          ". footer .";
+}
+
+body > header,
+body > nav {
+  display: none;
+}

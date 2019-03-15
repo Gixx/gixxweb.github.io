@@ -1,0 +1,15 @@
+body > header > h1 {
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  margin: 1rem;
+  text-indent: -100rem;
+  overflow: hidden;
+  background-image: url("/assets/img/Gixx.png");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: -0.5rem 0;
+  background-color: var(--secondary-lighter-grey);
+  border: 1rem solid var(--secondary);
+  border-radius: 50%;
+}

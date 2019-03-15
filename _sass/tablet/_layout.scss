@@ -1,0 +1,8 @@
+body {
+  grid-template-columns: minmax(5px, auto) 100px minmax(350px, 560px) minmax(5px, auto);
+  grid-template-rows:  100px minmax(min-content, calc(100vh - 150px)) 30px;
+  grid-template-areas:
+          ". header nav ."
+          ". main main ."
+          ". footer footer .";
+}
