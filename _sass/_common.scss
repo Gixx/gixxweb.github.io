@@ -49,8 +49,7 @@ body {
   justify-items: stretch;
   grid-gap: 1rem;
   /* background */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 30%);
-  background-attachment: fixed;
+  background: fixed linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0) 30%);
 }
 
 a, a:visited {
