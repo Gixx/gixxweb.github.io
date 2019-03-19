@@ -4,6 +4,10 @@ body > nav > ul > li {
   background-color: #ffffff;
 }
 
+body > nav > ul > li:hover {
+  box-shadow: 0 0 2rem 0 #ffffaa;
+}
+
 body > nav > ul > li > a {
   background-size: 90%;
   background-position: center center;
@@ -16,6 +20,10 @@ body > nav > ul > li.home > a {
 
 body > nav > ul > li.projects > a {
   background-image: url("/assets/img/icons/projects.svg");
+}
+
+body > nav > ul > li.websites > a {
+  background-image: url("/assets/img/icons/websites.svg");
 }
 
 body > nav > ul > li.cv > a {

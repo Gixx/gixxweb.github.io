@@ -1,6 +1,6 @@
 body {
-  grid-template-columns: minmax(50px, auto) minmax(160px, 260px) 50px minmax(670px, 900px) minmax(50px, auto);
-  grid-template-rows: 0 minmax(min-content, calc(100vh - 50px)) 30px;
+  grid-template-columns: minmax(5rem, auto) minmax(18rem, 28rem) 7rem minmax(69rem, 92rem) minmax(5rem, auto);
+  grid-template-rows: 2rem minmax(min-content, calc(100vh - 7rem)) 5rem;
   grid-template-areas:
           ". . . . ."
           ". header nav main ."
