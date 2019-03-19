@@ -16,9 +16,7 @@ body > nav > ul > li {
 body > nav > ul > li > a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 0;
   overflow: hidden;
-  padding-top: 100%;
-  background-color: #009999;
-  border-radius: 50%;
+  padding-top: calc(1 * 100%);
 }
