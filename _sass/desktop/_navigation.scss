@@ -1,3 +1,82 @@
+body > nav > ul {
+  z-index: 10;
+}
+
+body > nav > ul > li {
+  border-radius: 50%;
+  border:0.2rem solid #000000;
+  background-color: #ffffff;
+  transition: margin-left 500ms ease-out;
+}
+
+body > nav > ul > li.active,
+body > nav > ul > li:hover {
+  box-shadow: 0 0 2rem 0 #ffffaa;
+  margin-left: 0.75rem;
+}
+
+body > nav > ul > li::after {
+  content: '';
+  display: block;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 2rem 0 #ffffaa;
+  position: absolute;
+  top: 1.1rem;
+  right: -4.3rem;
+  z-index: 1;
+  transition: opacity 400ms ease-out;
+  opacity: 0;
+}
+
+body > nav > ul > li:hover::after {
+  opacity: 1;
+}
+
+body > nav > ul > li > a {
+  background-size: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+body > nav > ul > li.home::after {
+  content: 'Home';
+}
+
+body > nav > ul > li.home > a {
+  background-image: url("/assets/img/icons/home.svg");
+}
+
+body > nav > ul > li.projects::after {
+  content: 'Projects';
+}
+
+body > nav > ul > li.projects > a {
+  background-image: url("/assets/img/icons/projects.svg");
+}
+
+body > nav > ul > li.websites::after {
+  content: 'Websites';
+}
+
+body > nav > ul > li.websites > a {
+  background-image: url("/assets/img/icons/websites.svg");
+}
+
+body > nav > ul > li.cv > a {
+  background-image: url("/assets/img/icons/cv.svg");
+}
+
+body > nav > ul > li.contact > a {
+  background-image: url("/assets/img/icons/contact.svg");
+}
+
+body > nav > ul > li.about > a {
+  background-image: url("/assets/img/icons/about.svg");
+}
+
 body > nav {
   padding: 0.5rem;
 }

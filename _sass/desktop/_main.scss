@@ -1,6 +1,8 @@
 body > main > section {
-  border-radius: 0.5rem;
-  background: #7f7fff;
+  border-radius: 1rem;
+  border:0.2rem solid #000000;
+  background-color: #ffffff;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
