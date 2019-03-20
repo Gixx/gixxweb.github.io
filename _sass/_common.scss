@@ -56,11 +56,13 @@ body {
 body > header {
   grid-area: header;
   position: relative;
+  transition: all 1s, background 0s, border 0s;
 }
 
 body > nav {
   grid-area: nav;
   position: relative;
+  transition: all 0.5s;
 }
 
 body > main {

@@ -1,7 +1,7 @@
 body > nav > ul {
   display: block;
   margin: 0;
-  padding: 3rem;
+  padding: 3rem 0;
   height: 10rem;
 }
 
@@ -9,8 +9,8 @@ body > nav > ul > li {
   display: inline-block;
   margin: 0 1rem 0 0;
   padding: 0;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 body > nav > ul > li > a {

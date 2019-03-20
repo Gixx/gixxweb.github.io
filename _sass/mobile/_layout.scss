@@ -1,8 +1,7 @@
 body {
-  grid-template-columns: 0 auto 0;
-  grid-template-rows:  0  minmax(min-content, calc(100vh - 50px)) 30px;
+  grid-template-columns: 2rem auto 2rem;
+  grid-template-rows:  minmax(min-content, calc(100vh - 7rem)) 5rem;
   grid-template-areas:
-          ". . ."
           ". main ."
           ". footer .";
 }

@@ -2,10 +2,13 @@ body > nav > ul > li {
   border-radius: 50%;
   border:0.2rem solid #000000;
   background-color: #ffffff;
+  opacity: 0.7;
 }
 
+body > nav > ul > li.active,
 body > nav > ul > li:hover {
   box-shadow: 0 0 2rem 0 #ffffaa;
+  opacity: 1;
 }
 
 body > nav > ul > li > a {
