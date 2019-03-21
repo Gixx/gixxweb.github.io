@@ -4,6 +4,7 @@ body > nav > ul {
   padding: 3rem 0;
   height: 10rem;
   vertical-align: top;
+  z-index: 10;
 }
 
 body > nav > ul > li {
@@ -21,7 +22,6 @@ body > nav > ul > li {
 
 body > nav > ul > li.active,
 body > nav > ul > li:hover {
-  box-shadow: 0 0 2rem 0 #ffffaa;
   margin-top: 1rem;
 }
 

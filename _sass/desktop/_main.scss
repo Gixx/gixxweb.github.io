@@ -1,8 +1,12 @@
-body > main > section {
+body > main {
   border-radius: 1rem;
   border:0.2rem solid #000000;
   background-color: #ffffff;
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+
+body > main > section {
+  padding: 2rem;
 }

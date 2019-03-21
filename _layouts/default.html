@@ -9,7 +9,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
         <meta name="language" content="en">
         <meta name="robots" content="index,follow">
-        <meta name="theme-color" content="#000000">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i">
@@ -24,12 +31,12 @@
         </header>
         <nav>
             <ul>
-                <li class="home"><a href="/">Home</a></li>
-                <li class="projects"><a href="/">Projects</a></li>
-                <li class="websites"><a href="/">Websites</a></li>
-                <li class="cv"><a href="/">CV</a></li>
-                <li class="about"><a href="/">About me</a></li>
-                <li class="contact"><a href="/">Contact</a></li>
+                <li data-title="Home" class="home{% if page.activePage == 'home'%} active{% endif %}"><a href="/">Home</a></li>
+                <li data-title="Projects" class="projects{% if page.activePage == 'projects'%} active{% endif %}"><a href="/projects.html">Projects</a></li>
+                <li data-title="Websites" class="websites{% if page.activePage == 'websites'%} active{% endif %}"><a href="/websites.html">Websites</a></li>
+                <li data-title="Curriculum Vitae" class="cv{% if page.activePage == 'cv'%} active{% endif %}"><a href="/cv.html">CV</a></li>
+                <li data-title="About me" class="about{% if page.activePage == 'about'%} active{% endif %}"><a href="/about.html">About me</a></li>
+                <li data-title="Contact" class="contact{% if page.activePage == 'contact'%} active{% endif %}"><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
         <main>

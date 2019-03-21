@@ -1,98 +1,3 @@
-body > nav > ul {
-  z-index: 10;
-}
-
-body > nav > ul > li {
-  border-radius: 50%;
-  border:0.2rem solid #000000;
-  background-color: #ffffff;
-  transition: margin-left 500ms ease-out;
-}
-
-body > nav > ul > li.active,
-body > nav > ul > li:hover {
-  //box-shadow: 0 0 2rem 0 #ffffaa;
-  margin-left: 0.75rem;
-}
-
-body > nav > ul > li::after {
-  content: '';
-  display: block;
-  padding: 0.3rem 1rem 0.3rem 1.4rem;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #000000;
-  color: #ffffff;
-  position: absolute;
-  top: 1.1rem;
-  left: 0;
-  z-index: -1;
-  width: 0.01rem;
-  transition: opacity 400ms ease-out, width 500ms ease-out, left 500ms ease-out;
-  opacity: 0;
-  white-space: pre;
-  overflow: hidden;
-}
-
-body > nav > ul > li:hover::after {
-  opacity: 1;
-  width: auto;
-  left: 4.2rem;
-}
-
-body > nav > ul > li > a {
-  background-size: 90%;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-body > nav > ul > li.home::after {
-  content: 'Home';
-}
-
-body > nav > ul > li.home > a {
-  background-image: url("/assets/img/icons/home.svg");
-}
-
-body > nav > ul > li.projects::after {
-  content: 'Projects';
-}
-
-body > nav > ul > li.projects > a {
-  background-image: url("/assets/img/icons/projects.svg");
-}
-
-body > nav > ul > li.websites::after {
-  content: 'Websites';
-}
-
-body > nav > ul > li.websites > a {
-  background-image: url("/assets/img/icons/websites.svg");
-}
-
-body > nav > ul > li.cv::after {
-  content: 'Curriculum Vitae';
-}
-
-body > nav > ul > li.cv > a {
-  background-image: url("/assets/img/icons/cv.svg");
-}
-
-body > nav > ul > li.contact::after {
-  content: 'Contact';
-}
-
-body > nav > ul > li.contact > a {
-  background-image: url("/assets/img/icons/contact.svg");
-}
-
-body > nav > ul > li.about::after {
-  content: 'About Me';
-}
-
-body > nav > ul > li.about > a {
-  background-image: url("/assets/img/icons/about.svg");
-}
-
 body > nav {
   padding: 0.5rem;
 }
@@ -103,6 +8,7 @@ body > nav > ul {
   top: 3.5rem;
   margin: 0;
   padding: 0;
+  z-index: 10;
 }
 
 body > nav > ul > li {
@@ -111,12 +17,107 @@ body > nav > ul > li {
   padding: 0;
   width: 5rem;
   height: 5rem;
+  position: relative;
+  border-radius: 50%;
+  border:0.2rem solid #000000;
+  background-color: #ffffff;
+  transition: margin-left 500ms ease-out;
+}
+
+body > nav > ul > li:hover {
+  margin-left: 0.75rem;
+}
+
+body > nav > ul > li::after {
+  content: attr(data-title);
+  display: block;
+  padding: 0.3rem 1rem 0.3rem 1.4rem;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  top: 1.1rem;
+  left: 0;
+  z-index: -1;
+  width: 0.01rem;
+  opacity: 0;
+  white-space: pre;
+  overflow: hidden;
+  transition: opacity 400ms ease-out, width 500ms ease-out, left 500ms ease-out;
+}
+
+body > nav > ul > li:hover::after {
+  opacity: 1;
+  width: auto;
+  left: 4.2rem;
+}
+
+body > nav > ul > li.active {
+  margin-left: 0.75rem;
+  transition: none;
+}
+
+body > nav > ul > li.active::after,
+body > nav > ul > li.active:hover::after {
+  display: none;
 }
 
 body > nav > ul > li > a {
   display: block;
   width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-top: calc(1 * 100%);
+  height: 100%;
+  background-color: #ffffff;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -100000rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 50%;
 }
+
+body > nav > ul > li.active > a {
+  width: calc(100% + 0.2rem);
+  border-radius: 50% 0 0 50%;
+}
+
+body > nav > ul > li.active > a::after {
+  content: '';
+  display: block;
+  height: 5rem;
+  width: 3.05rem;
+  background-color: #ffffff;
+  border-top: 0.2rem solid #000000;
+  border-right: 0.2rem solid #ffffff;
+  border-bottom: 0.2rem solid #000000;
+  border-radius: 1px;
+  opacity: 1;
+  position: absolute;
+  z-index: -1;
+  top: -0.4rem;
+  left: 2.5rem;
+}
+
+body > nav > ul > li.home > a {
+  background-image: url("/assets/img/icons/home.svg");
+}
+
+body > nav > ul > li.projects > a {
+  background-image: url("/assets/img/icons/projects.svg");
+}
+
+body > nav > ul > li.websites > a {
+  background-image: url("/assets/img/icons/websites.svg");
+}
+
+body > nav > ul > li.cv > a {
+  background-image: url("/assets/img/icons/cv.svg");
+}
+
+body > nav > ul > li.contact > a {
+  background-image: url("/assets/img/icons/contact.svg");
+}
+
+body > nav > ul > li.about > a {
+  background-image: url("/assets/img/icons/about.svg");
+}
+
