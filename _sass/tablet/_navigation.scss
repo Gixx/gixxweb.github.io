@@ -20,20 +20,50 @@ body > nav > ul > li {
   transition: margin-top 500ms ease-out;
 }
 
-body > nav > ul > li.active,
 body > nav > ul > li:hover {
   margin-top: 1rem;
+}
+
+body > nav > ul > li.active {
+  margin-top: 1rem;
+  transition: none;
 }
 
 body > nav > ul > li > a {
   display: block;
   width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding-top: calc(1 * 100%);
-  background-size: 90%;
+  height: 100%;
+  background-color: #ffffff;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  text-indent: -100000rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 50%;
+}
+
+
+body > nav > ul > li.active > a {
+  width: calc(100% + 0.2rem);
+  border-radius: 50% 50% 0 0;
+  height: calc(100% + 0.2rem);
+}
+
+body > nav > ul > li.active > a::after {
+  content: '';
+  display: block;
+  height: 4.5rem;
+  width: 4.2rem;
+  background-color: #ffffff;
+  border-left: 0.2rem solid #000000;
+  border-bottom: 0.2rem solid #ffffff;
+  border-right: 0.2rem solid #000000;
+  border-radius: 1px;
+  opacity: 1;
+  position: absolute;
+  z-index: -1;
+  top: 1.3rem;
+  left: -0.4rem;
 }
 
 body > nav > ul > li.home > a {
