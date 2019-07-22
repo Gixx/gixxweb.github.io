@@ -486,7 +486,7 @@
                     let year = parseInt(yearQuarter[0]);
                     let quarter = parseInt(yearQuarter[1]);
                     // 1 full year = 4 quarters, so the number of full years = (year - rangeFrom) * 4
-                    // new year = 1the 4th quarter finished, so it's already counted in full years, so not full year = (quarter - 1))
+                    // new year = the 4th quarter finished, so it's already counted in full years
                     // multiplies with the height of a grid row and adds the bottom position
                     return ((((year - rangeFrom) * 4) + (quarter - 1)) * rowHeight) + startOffset;
                 }
