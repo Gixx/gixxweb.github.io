@@ -16,90 +16,91 @@ future: true
 
 destination: docs
 
+excerpt_separator: <!--more-->
+
 exclude:
   - README.md
-  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - .jekyll-cache
+  - .sass-cache
+  - .idea
+  - node_modules
 
 env: production
 
-excerpt_separator: <!--more-->
+reversed_categories:
+  - tutorial
 
 markdown: kramdown
 
-permalink: /:categories/:title.html
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+permalink: /:categories/:title
 
 autopages:
   enabled: true
   tags:
     layouts:
-      - postlist.html
+      - taglist.html
+    title: ''
     permalink: /tags/:tag/
-    title:  'Tag: :tag'
-    slugify:
-      mode: 'ascii'
-      cased: false
     enabled: true
   categories:
     layouts:
-      - postlist.html
+      - categorylist.html
+    title: ''
     permalink: /:cat/
-    title:  'Category: :cat'
     enabled: true
   collections:
     enabled: false
 
+jekyll-archives:
+  enabled:
+    - month
+  layouts:
+    month: 'datelist'
+  permalinks:
+    month: '/archive/:year-:month/'
+
 pagination:
   enabled: true
-  per_page: 5
+  per_page: 12
   offset: 0
-  permalink: '/page/:num/'
-  title: ':title - page :num of :max'
+  permalink: '/page/:num'
+  title: ':title - Page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true
 
-plugins:
-  - jekyll-feed
-  - jekyll-archives
-  - rouge
-  - jekyll-last-modified-at
-  - jekyll-plantuml
-  - jekyll-responsive-image
-  - jekyll-tidy
-  - classifier-reborn
-  - jekyll-tagging-related_posts
-  - jekyll-archives
-  - jekyll-paginate-v2
-
 jekyll_tidy:
-  exclude: ["robots.txt"]
+  exclude: ['robots.txt']
   compress_html: false
 
 sass:
   sass_dir: _sass
-  sourcemap: true
   style: compressed
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-responsive_image:
-  template: _includes/responsive-image.html
-  default_quality: 90
-  sizes:
-    - width: 960
-    - width: 768
-    - width: 465
-    - width: 217
-  auto_rotate: false
-  strip: true
-  base_path: assets
-  output_path_format: assets/resized/%{width}/%{basename}
-  save_to_source: true
-  cache: false
-  extra_images:
-    - assets/*.png
-    - assets/*.jpg
-    - assets/img/*.png
-    - assets/img/*.jpg
+plugins:
+  - jekyll-feed
+  - jekyll-commonmark
+  - jekyll-archives
+  - jekyll-include-cache
+  - rouge
+  - uglifier
+  - jekyll-last-modified-at
+  - jekyll-plantuml
+  - jekyll-tidy
+  - classifier-reborn
+  - jekyll-tagging-related_posts
+  - jekyll-paginate-v2
